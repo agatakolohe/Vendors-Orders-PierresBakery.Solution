@@ -18,7 +18,8 @@ namespace VendorsOrdersPierresBakery.Tests
         public void GetVendorName_ReturnsVendorName_VendorName()
         {
             string vendorName = "test name";
-            Vendor newVendor = new Vendor(vendorName);
+            string vendorDescription = "test description";
+            Vendor newVendor = new Vendor(vendorName, vendorDescription);
 
             string result = newVendor.VendorName;
 
@@ -27,8 +28,9 @@ namespace VendorsOrdersPierresBakery.Tests
         [TestMethod]
         public void GetVendorName_ReturnsVendorDescription_VendorDescription()
         {
+            string vendorName = "test name";
             string vendorDescription = "test description";
-            Vendor newVendor = new Vendor(vendorDescription);
+            Vendor newVendor = new Vendor(vendorName, vendorDescription);
 
             string result = newVendor.VendorDescription;
 
