@@ -72,6 +72,17 @@ namespace VendorsOrdersPierresBakery.Tests
         }
 
         [TestMethod]
+        public void GetOrderId_ReturnsOrderId_Int()
+        {
+            string orderTitle = "test order title";
+            string orderDescription = "test order description";
+            int orderPrice = 1;
+            Order newOrder = new Order(orderTitle, orderDescription, orderPrice);
+
+            int result = newOrder.OrderId;
+
+            Assert.AreEqual(1, result);
+        }
 
 
 

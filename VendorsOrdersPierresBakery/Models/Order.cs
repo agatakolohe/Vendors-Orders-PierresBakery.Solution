@@ -27,6 +27,19 @@ namespace VendorsOrdersPierresBakery.Models
             string orderDateWithFormat = orderDate.ToLongDateString();
             OrderDate = orderDateWithFormat;
         }
+        public static void ClearAll()
+        {
+            _instances.Clear();
+        }
+        public static List<Order> GetAll()
+        {
+            return _instances;
+        }
+
+        public static Order Find(int searchId)
+        {
+            return _instances[searchId - 1];
+        }
 
     }
 }
