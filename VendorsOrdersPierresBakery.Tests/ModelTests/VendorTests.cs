@@ -62,7 +62,7 @@ namespace VendorsOrdersPierresBakery.Tests
             string vendorDescription02 = "sugar vendor";
             Vendor newVendor01 = new Vendor(vendorName01, vendorDescription01);
             Vendor newVendor02 = new Vendor(vendorName02, vendorDescription02);
-            List<Vendor> newVendorList = new List<Vendor> { newVendor01, newVendor02 };
+            List<Vendor> newVendorList = new List<Vendor> { newVendor01 };
 
             List<Vendor> result = Vendor.GetAll();
 
