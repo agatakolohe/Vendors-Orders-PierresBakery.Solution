@@ -34,6 +34,7 @@ Eighth independent project for Epicodus to demonstrate my understanding of creat
 | It will get the current date for OrderDate                 | order.GetOrderDate() order.OrderDate("Friday, December 18, 2020";) |
 | It will assign an Order Id number to an Order              | Order(int orderId).toEqual(1);                                     |
 | It will create a list of Order objects                     | orderList = new List<Order> { order01, order02 };                  |
+| It will find specific order by Order Id                    | Order.Find(2).toEqual(order02);                                    |
 
 </details>
 
