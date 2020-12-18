@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace VendorsOrdersPierresBakery.Controllers
 {
-    public class VendorsController : Controller
+    public class OrdersController : Controller
     {
 
         // [HttpGet("/categories/{categoryId}/items/new")]//user creates the ChildObject example:Item in category. Category: Housework == Item:Mop the floors
