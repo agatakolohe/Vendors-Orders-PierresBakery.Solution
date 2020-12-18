@@ -44,6 +44,7 @@ namespace VendorsOrdersPierresBakery.Controllers
             Dictionary<string, object> model = new Dictionary<string, object>();
             Vendor foundVendor = Vendor.Find(vendorId);
             Order newOrder = new Order(orderTitle, orderDescription, orderPrice);
+            newOrder.GetOrderDate();
             foundVendor.AddOrder(newOrder);
             List<Order> vendorsOrders = foundVendor.Orders;
             model.Add("orders", vendorsOrders);

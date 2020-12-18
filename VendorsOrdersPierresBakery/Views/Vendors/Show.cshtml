@@ -1,4 +1,5 @@
 @using VendorsOrdersPierresBakery.Models;
+
 @{
     Layout = "_Layout";
 }
@@ -9,11 +10,6 @@
     @foreach (Order order in @Model["orders"])
     {
         <li><a href='/vendors/@Model["vendor"].VendorId/orders/@order.OrderId'>@order.OrderTitle</a></li>
-        <ul>
-            <li><a href='/vendors/@Model["vendor"].VendorId/orders/@order.OrderId'>@order.OrderDescription</a></li>
-            <li><a href='/vendors/@Model["vendor"].VendorId/orders/@order.OrderId'>@order.OrderPrice</a></li>
-            <li><a href='/vendors/@Model["vendor"].VendorId/orders/@order.OrderId'>@order.OrderDate</a></li>
-        </ul>
     }
 </ol>
 
