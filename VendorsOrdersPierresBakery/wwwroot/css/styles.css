@@ -6,11 +6,19 @@ body {
 .jumbotron {
   text-align: center;
   background-color: #476742;
+  border: solid #d7a67a;
   opacity: 0.8;
-}
-.jumbotron h1 {
   color: white;
 }
-h3 {
+
+.homebutton {
   text-align: center;
+  color: white;
+  border: solid #d7a67a;
+  box-shadow: 5px 5px #476742;
+  border-width: 5px;
+  width: 350px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 10px;
 }
