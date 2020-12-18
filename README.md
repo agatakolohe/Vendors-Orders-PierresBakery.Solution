@@ -1,14 +1,16 @@
-# Application Name
+# Vendors & Orders Tracker for Pierre's Bakery
 
 <div align="center">
 <img src="https://github.com/agatakolohe.png" width="200px" height="auto" >
 </div>
-<p align="center">Description of application, date-2020</p>
+<p align="center">Basic Webb Application with C# Indenpendent Project for Epicodus, 12-18-2020</p>
 <p align="center"> By Agata Kolodziej</p>
 
 ## Description
 
-Purpose usage, detailed explanation what is does and any other information you want users and other developers to have
+Eighth independent project for Epicodus to demonstrate my understanding of creating C# basic web applications, ASP.NET Core MVC web application, HTTP CRUD methods, MVC application, RESTful routing and test-driven development. This web application will track Pierre's Bakery's vendors and their orders. It will create a web application that will track Pierre's vendors and their purchases. This application will include a splash page welcoming Pierre's Bakery and providing a link to a vendor's page. The vendor's page will contain a link to a page presenting a form that Pierre(user) can fill out to create a new vendor. After the form is submitted, the inputted vendor will be saved to the website and the user will be taken back to the homepage. Pierre (user) can click on a vendor's name and go to a new page that will display all of that vendor's orders. Pierre (user) can also click on a link to a page presenting a form to create a new order for a particular vendor.
+
+\*\*\* add definitions for MVC, CRUD, HTTP, REST
 
 ## Specifications
 
@@ -32,7 +34,7 @@ Purpose usage, detailed explanation what is does and any other information you w
 
 ##### Open Locally
 
-- Click on the link to my repository: [My Repository]()
+- Click on the link to my repository: [My Repository](https://github.com/agatakolohe/Vendors-Orders-PierresBakery.Solution.git)
 - Click on the green "Code" button and copy the repository URL
 - Open your terminal and use the command `git clone REPO URL HERE` into the directory you would like to clone the repository
 - Open in text editor to view code and make changes
@@ -71,10 +73,17 @@ If any errors or bugs occur with installation delete both bin and obj folders an
 
 ## Technologies Used
 
+\*\*list alphabetically
+
 - HTML
+- CSS
+- Bootstrap
+- C# 7.3
 - Razor
 - ASP.NET Core MVC
-- C# 7.3
+- RESTful Routing
+- CRUD
+- HTTP
 - .NET Core 2.2
 - REPL
 - VS Code
