@@ -21,6 +21,7 @@ namespace VendorsOrdersPierresBakery.Tests
             Order newOrder = new Order("orderTitle", "orderDescription", 1);
             Assert.AreEqual(typeof(Order), newOrder.GetType());
         }
+
         [TestMethod]
         public void GetOrderTitle_ReturnsOrderTitle_OrderTitle()
         {
@@ -33,6 +34,7 @@ namespace VendorsOrdersPierresBakery.Tests
 
             Assert.AreEqual(orderTitle, result);
         }
+
         [TestMethod]
         public void GetOrderDescription_ReturnsOrderDescription_OrderDescription()
         {
@@ -45,6 +47,7 @@ namespace VendorsOrdersPierresBakery.Tests
 
             Assert.AreEqual(orderDescription, result);
         }
+
         [TestMethod]
         public void GetOrderPrice_ReturnsOrderPrice_OrderPrice()
         {
@@ -57,6 +60,7 @@ namespace VendorsOrdersPierresBakery.Tests
 
             Assert.AreEqual(orderPrice, result);
         }
+
         [TestMethod]
         public void GetOrderDate_ReturnsOrderDate_OrderDate()
         {
@@ -83,6 +87,7 @@ namespace VendorsOrdersPierresBakery.Tests
 
             Assert.AreEqual(1, result);
         }
+
         [TestMethod]
         public void GetAll_ReturnsAllOrderObjects_OrderList()
         {
@@ -118,8 +123,5 @@ namespace VendorsOrdersPierresBakery.Tests
             Assert.AreEqual(newOrder02, result);
 
         }
-
-
-
     }
 }

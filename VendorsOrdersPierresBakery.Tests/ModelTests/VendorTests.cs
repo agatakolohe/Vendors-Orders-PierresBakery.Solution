@@ -43,6 +43,7 @@ namespace VendorsOrdersPierresBakery.Tests
 
             Assert.AreEqual(vendorDescription, result);
         }
+
         [TestMethod]
         public void GetVendorId_ReturnsVendorId_Int()
         {
@@ -102,8 +103,6 @@ namespace VendorsOrdersPierresBakery.Tests
             List<Order> result = newVendor.Orders;
 
             CollectionAssert.AreEqual(newOrderList, result);
-
-
         }
     }
 }
