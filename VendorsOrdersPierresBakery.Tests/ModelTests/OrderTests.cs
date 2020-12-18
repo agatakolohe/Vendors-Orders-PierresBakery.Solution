@@ -32,6 +32,18 @@ namespace VendorsOrdersPierresBakery.Tests
 
             Assert.AreEqual(orderTitle, result);
         }
+        [TestMethod]
+        public void GetOrderDescription_ReturnsOrderDescription_OrderDescription()
+        {
+            string orderTitle = "test order title";
+            string orderDescription = "test order description";
+            int orderPrice = 1;
+            Order newOrder = new Order(orderTitle, orderDescription, orderPrice);
+
+            string result = newOrder.OrderDescription;
+
+            Assert.AreEqual(orderTitle, result);
+        }
 
 
     }
