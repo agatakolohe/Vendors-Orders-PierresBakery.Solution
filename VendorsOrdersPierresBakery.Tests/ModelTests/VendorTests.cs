@@ -78,7 +78,7 @@ namespace VendorsOrdersPierresBakery.Tests
             Vendor newVendor01 = new Vendor(vendorName01, vendorDescription01);
             Vendor newVendor02 = new Vendor(vendorName02, vendorDescription02);
 
-            Vendor result = Vendor.Find(2);
+            Vendor result = Vendor.Find(1);
 
             Assert.AreEqual(newVendor01, result);
 
