@@ -7,36 +7,49 @@ namespace VendorsOrdersPierresBakery.Controllers
 {
     public class VendorsController : Controller
     {
-        // [HttpGet("/ParentObject")] //Display list of all ParentObjects
-        // public ActionResult Index()
-        // {
-        // List<Category> allCategories = Category.GetAll(); //displaying all categories
-        //     return View(allCategories);
-        // }
+        [HttpGet("/vendors")]
+        public ActionResult Index()
+        {
+            List<Vendor> allVendors = Vendor.GetAll();
+            return View(allVendors);
+        }
 
-        // [HttpGet("/ParentObject/new")] //user creates new ParentObject with form
-        // public ActionResult New()
-        // {
-        //     return View();
-        // }
+        [HttpGet("/vendors/new")]
+        public ActionResult New()
+        {
+            return View();
+        }
 
-        // [HttpPost("/ParentObject")] //Creates new ParentObject on server process form submission
-        // public ActionResult Create(string categoryName) //accepts argument because it is referring to the contents in form 
-        // {
-        //     Category newCategory = new Category(categoryName); //create a new category
-        //     return RedirectToAction("Index"); //sends the user back to the Index route
-        // }
+        [HttpPost("/vendors")]
+        public ActionResult Create(string vendorName, string vendorDescription)
+        {
+            Vendor newVendor = new Vendor(vendorName, vendorDescription);
+            return RedirectToAction("Index");
+        }
 
-        // [HttpGet("/ParentObject/{id}")] //Display one specific ParentObject's details
-        // public ActionResult Show(int id)
-        // {
-        //     Dictionary<string, object> model = new Dictionary<string, object>();
-        //     Category selectedCategory = Category.Find(id);
-        //     List<Item> categoryItems = selectedCategory.Items;
-        //     model.Add("category", selectedCategory); //keys == "category" and "items"
-        //     model.Add("items", categoryItems);
-        //     return View(model); //view can only accept one model argument
-        // }
+        [HttpGet("/vendors/{id}")]
+        public ActionResult Show(int vendorId)
+        {
+            Dictionary<string, object> model = new Dictionary<string, object>();
+            Vendor selectedVendor = Vendor.Find(id);
+            List<Order> selectedVendorsOrders = selectedVendor.Orders;
+            model.Add("vendor", selectedVendor);
+            model.Add("orders", selectedVendorsOrders);
+            return View(model);
+        }
+
+        [HttpPost("/vendors/{vendorId}/orders")]
+        public ActionResult Create(int vendorId, string orderTitle, string orderDescription, int orderPrice)
+        {
+            Dictionary<string, object> model = new Dictionary<string, object>();
+            Vendor foundVendor = Vendor.Find(vendorId);
+            Order newOrder = new Order(orderTitle, orderDescription, orderPrice);
+            foundVendor.AddOrder(newOrder);
+            List<Order> vendorsOrders = foundVendor.Orders;
+            model.Add("orders", vendorsOrders);
+            model.Add("vendor", foundVendor);
+            return View("Show", model);
+        }
 
     }
 }

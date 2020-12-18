@@ -1,19 +1,22 @@
-@* @using ProjectName.Models;
-  @{
-  Layout = "_Layout";
-  }
+@using VendorsOrdersPierresBakery.Models;
+@{
+    Layout = "_Layout";
+}
 
-  <h3>Here are all the items in this category:</h3>//child of parent
+<h1>These are all the orders for @Model["vendor"].VendorName</h1>
 
-  <ol>
-  @foreach (Item item in @Model["items"])
-  {
-  <li><a href='/categories/@Model["category"].Id/items/@item.Id'>@item.Description</a></li>
-  }
-  </ol>
+<ol>
+    @foreach (Order order in @Model["orders"])
+    {
+        <li><a href='/vendors/@Model["vendor"].VendorId/orders/@order.OrderId'>@order.OrderTitle</a></li>
+        <ul>
+            <li><a href='/vendors/@Model["vendor"].VendorId/orders/@order.OrderId'>@order.OrderDescription</a></li>
+            <li><a href='/vendors/@Model["vendor"].VendorId/orders/@order.OrderId'>@order.OrderPrice</a></li>
+            <li><a href='/vendors/@Model["vendor"].VendorId/orders/@order.OrderId'>@order.OrderDate</a></li>
+        </ul>
+    }
+</ol>
 
-  <p><a href='/categories/@Model["category"].Id/items/new'>Add a new item</a></p>
-  <p><a href='/categories'>Return to category list</a></p>
-  <p><a href='/'>Return to Main Page</a></p> *@
-
-  @* show all categories  *@
+<p><a href='/vendors/@Model["vendor"].VendorId/orders/new'>Add a New Order for @Model["vendor"].VendorName</a></p>
+<p><a href='/vendors'>Return to Vendors List</a></p>
+<p><a href='/'>Return to Home Page</a></p>
