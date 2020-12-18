@@ -19,6 +19,7 @@ namespace VendorsOrdersPierresBakery.Tests
             Vendor newVendor = new Vendor("test name", "test description");
             Assert.AreEqual(typeof(Vendor), newVendor.GetType());
         }
+
         [TestMethod]
         public void GetVendorName_ReturnsVendorName_VendorName()
         {
@@ -30,6 +31,7 @@ namespace VendorsOrdersPierresBakery.Tests
 
             Assert.AreEqual(vendorName, result);
         }
+
         [TestMethod]
         public void GetVendorName_ReturnsVendorDescription_VendorDescription()
         {
@@ -68,6 +70,7 @@ namespace VendorsOrdersPierresBakery.Tests
 
             CollectionAssert.AreEqual(newVendorList, result);
         }
+
         [TestMethod]
         public void Find_ReturnsCorrectVendor_Vendor()
         {
@@ -83,6 +86,5 @@ namespace VendorsOrdersPierresBakery.Tests
             Assert.AreEqual(newVendor02, result);
 
         }
-
     }
 }

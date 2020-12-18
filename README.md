@@ -28,8 +28,9 @@ Eighth independent project for Epicodus to demonstrate my understanding of creat
 
 ### Describe: Order()
 
-| Test | Expect |
-| ---- | ------ |
+| Test                                                       | Expect                                                                           |
+| ---------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| It will instantiate an Order object with Order constructor | Order(string orderTitle, string orderDescription, int orderPrice, int orderDate) |
 
 </details>
 
