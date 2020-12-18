@@ -43,7 +43,7 @@ namespace VendorsOrdersPierresBakery.Tests
             string vendorDescription = "test description";
             Vendor newVendor = new Vendor(vendorName, vendorDescription);
 
-            int result = newVendor.Id;
+            int result = newVendor.VendorId;
 
             Assert.AreEqual(1, result);
         }
