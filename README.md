@@ -8,9 +8,7 @@
 
 ## Description
 
-Eighth independent project for Epicodus to demonstrate my understanding of creating C# basic web applications, ASP.NET Core MVC web application, HTTP CRUD methods, MVC application, RESTful routing and test-driven development. This web application will track Pierre's Bakery's vendors and their orders. It will create a web application that will track Pierre's vendors and their purchases. This application will include a splash page welcoming Pierre's Bakery and providing a link to a vendor's page. The vendor's page will contain a link to a page presenting a form that Pierre(user) can fill out to create a new vendor. After the form is submitted, the inputted vendor will be saved to the website and the user will be taken back to the homepage. Pierre (user) can click on a vendor's name and go to a new page that will display all of that vendor's orders. Pierre (user) can also click on a link to a page presenting a form to create a new order for a particular vendor.
-
-\*\*\* add definitions for MVC, CRUD, HTTP, REST
+Eighth independent project for Epicodus to demonstrate my understanding of creating C# basic web applications, ASP.NET Core MVC web application, HTTP CRUD methods, MVC application, RESTful routing and test-driven development. This web application will track Pierre's bakery vendors and their orders. It will create a web application that will track Pierre's vendors and their purchases. This application will include a splash page welcoming Pierre and providing a link to view the current vendor's page and a link to add a new vendor. The vendor's page will contain a link to a page presenting a form that Pierre(user) can fill out to create a new vendor. After the form is submitted, the inputted vendor will be saved to the website and the user will be taken back to the homepage. Pierre (user) can click on a vendor's name and go to a new page that will display all of that vendor's orders. Pierre (user) can also click on a link to a page presenting a form to create a new order for a particular vendor.
 
 ## Specifications
 
@@ -73,14 +71,18 @@ In order to run the application, please install .NET for your computer to recogn
 - Use the commands `dotnet build` and `dotnet restore` to make sure code is compiled and packages are installed
 - Use the command `dotnet test` to run tests on all test methods
 
-##### View Online
+##### View In Browser
 
-- To view in browser click the GH-Pages link: [Name of App](URL)
-- what to do when open online
+- To view in browser, navigate to VendorsOrdersPierresBakery folder in the command line
+- Use the command `dotnet run` to execute the compiled code and start a localhost
+- In browser navigate to http://localhost:5000
+- Click "View Your Vendors" to see all added vendors
+- Click "Add a New Vendor" to add a new vendor
+- Enjoy the web application!
 
 ## Known Bugs
 
-TODO
+No known bugs present
 
 ## Support and Contact Details
 
@@ -88,21 +90,19 @@ If any errors or bugs occur with installation delete both bin and obj folders an
 
 ## Technologies Used
 
-\*\*list alphabetically
-
-- HTML
-- CSS
+- .NET Core 2.2
+- ASP.NET Core MVC
 - Bootstrap
 - C# 7.3
-- Razor
-- ASP.NET Core MVC
-- RESTful Routing
+- CSS
 - CRUD
-- HTTP
-- .NET Core 2.2
-- REPL
-- VS Code
 - GitHub
+- HTML
+- HTTP
+- Razor
+- REPL
+- RESTful Routing
+- VS Code
 
 ### License
 

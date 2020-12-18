@@ -10,7 +10,8 @@
 <div class="homebutton">
     @if (@Model.Count == 0)
     {
-        <h3>You currently do not have any vendors.</h3>
+        <h2>You currently do not have any vendors.</h2>
+        <h3><a href='/vendors/new'>Add a New Vendor</a></h3>
     }
 
     @foreach (Vendor vendor in Model)
