@@ -68,11 +68,11 @@ namespace VendorsOrdersPierresBakery.Tests
 
             newOrder.GetOrderDate();
 
-            //DateTime result = newOrder.OrderDate;
-            //string resultDateWithFormat = result.ToLongDateString();
-
             Assert.AreEqual(orderDate, newOrder.OrderDate);
         }
+
+        [TestMethod]
+
 
 
     }

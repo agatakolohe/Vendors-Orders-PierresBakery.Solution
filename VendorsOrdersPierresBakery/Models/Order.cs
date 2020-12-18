@@ -18,7 +18,6 @@ namespace VendorsOrdersPierresBakery.Models
             OrderTitle = orderTitle;
             OrderDescription = orderDescription;
             OrderPrice = orderPrice;
-            //DateTime orderDate = DateTime.UtcNow;
             _instances.Add(this);
             OrderId = _instances.Count;
         }
