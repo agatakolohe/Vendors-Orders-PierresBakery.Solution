@@ -94,7 +94,7 @@ namespace VendorsOrdersPierresBakery.Tests
             int orderPrice02 = 1;
             Order newOrder01 = new Order(orderTitle01, orderDescription01, orderPrice01);
             Order newOrder02 = new Order(orderTitle02, orderDescription02, orderPrice02);
-            List<Order> newOrderList = new List<Order> { newOrder01 };
+            List<Order> newOrderList = new List<Order> { newOrder01, newOrder02 };
 
             List<Order> result = Order.GetAll();
 
