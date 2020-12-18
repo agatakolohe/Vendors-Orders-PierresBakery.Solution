@@ -10,10 +10,10 @@ namespace VendorsOrdersPierresBakery.Models
         public int VendorId { get; }
         public List<Order> Orders { get; set; }
 
-        public Vendor(string vendorName, string vendorDescription)
+        public Vendor(string vendorName)
         {
             VendorName = vendorName;
-            VendorDescription = vendorDescription;
+            // VendorDescription = vendorDescription;
             // VendorId = _instances.Count;
             // Orders = new List<Order> { };
         }
