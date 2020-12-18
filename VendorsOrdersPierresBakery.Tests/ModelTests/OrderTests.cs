@@ -54,7 +54,7 @@ namespace VendorsOrdersPierresBakery.Tests
 
             int result = newOrder.OrderPrice;
 
-            Assert.AreEqual(orderDescription, result);
+            Assert.AreEqual(orderPrice, result);
         }
 
 
