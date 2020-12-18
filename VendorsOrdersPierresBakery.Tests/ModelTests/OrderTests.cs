@@ -83,6 +83,23 @@ namespace VendorsOrdersPierresBakery.Tests
 
             Assert.AreEqual(1, result);
         }
+        [TestMethod]
+        public void GetAll_ReturnsAllOrderObjects_OrderList()
+        {
+            string orderTitle01 = "flour";
+            string orderDescription01 = "order 10lbs of flour";
+            int orderPrice01 = 1;
+            string orderTitle02 = "sugar";
+            string orderDescription02 = "order 10lbs of sugar";
+            int orderPrice02 = 1;
+            Order newOrder01 = new Order(orderTitle01, orderDescription01, orderPrice01);
+            Order newOrder02 = new Order(orderTitle02, orderDescription02, orderPrice02);
+            List<Order> newOrderList = new List<Order> { newOrder01 };
+
+            List<Order> result = Order.GetAll();
+
+            CollectionAssert.AreEqual(newOrderList, result);
+        }
 
 
 
