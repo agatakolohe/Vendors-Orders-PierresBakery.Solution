@@ -11,7 +11,7 @@ namespace VendorsOrdersPierresBakery.Tests
     {
         public void Dispose()
         {
-            Order.ClearAll();
+            // Order.ClearAll();
         }
 
         [TestMethod]
