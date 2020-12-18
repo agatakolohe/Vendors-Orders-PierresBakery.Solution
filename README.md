@@ -17,7 +17,13 @@ Eighth independent project for Epicodus to demonstrate my understanding of creat
 <details>
   <summary>Expand Specs</summary>
 
-### Describe: functionName()
+### Describe: Vendor()
+
+| Test                                                        | Expect                                                          |
+| ----------------------------------------------------------- | --------------------------------------------------------------- |
+| It will instantiate a Vendor object with Vendor constructor | Vendor(string name, int id, string description, List orderList) |
+
+### Describe: Order()
 
 | Test | Expect |
 | ---- | ------ |
