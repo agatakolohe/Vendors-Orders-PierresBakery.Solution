@@ -3,7 +3,7 @@
 <div align="center">
 <img src="https://github.com/agatakolohe.png" width="200px" height="auto" >
 </div>
-<p align="center">Basic Webb Application with C# Indenpendent Project for Epicodus, 12-18-2020</p>
+<p align="center">Basic Web Application with C# Indenpendent Project for Epicodus, 12-18-2020</p>
 <p align="center"> By Agata Kolodziej</p>
 
 ## Description
