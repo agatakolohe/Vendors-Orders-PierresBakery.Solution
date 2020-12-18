@@ -25,6 +25,7 @@ Eighth independent project for Epicodus to demonstrate my understanding of creat
 | It will assign a Vendor Id number to a Vendor               | Vendor(int vendorId).toEqual(1);                      |
 | It will create a list of Vendor objects                     | vendorList = new List<Vendor> { vendor01, vendor02 }; |
 | It will find specific vendor by Vendor Id                   | Vendor.Find(2).toEqual(vendor02);                     |
+| It will associate order with vendor                         | vendor.AddOrder(order) order.Items.toEqual(order);    |
 
 ### Describe: Order()
 

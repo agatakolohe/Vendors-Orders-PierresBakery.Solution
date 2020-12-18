@@ -84,6 +84,25 @@ namespace VendorsOrdersPierresBakery.Tests
             Vendor result = Vendor.Find(2);
 
             Assert.AreEqual(newVendor02, result);
+        }
+
+        [TestMethod]
+        public void AddOrder_AssociatesOrderWithVendor_OrderList()
+        {
+            string orderTitle = "test order title";
+            string orderDescription = "test order description";
+            int orderPrice = 1;
+            Order newOrder = new Order(orderTitle, orderDescription, orderPrice);
+            List<Order> newOrderList = new List<Order> { };
+            string vendorName = "test name";
+            string vendorDescription = "test description";
+            Vendor newVendor = new Vendor(vendorName, vendorDescription);
+            newVendor.AddOrder(newOrder);
+
+            List<Order> result = newVendor.Orders;
+
+            CollectionAssert.AreEqual(newOrderList, result);
+
 
         }
     }

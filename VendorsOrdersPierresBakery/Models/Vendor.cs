@@ -16,7 +16,7 @@ namespace VendorsOrdersPierresBakery.Models
             VendorDescription = vendorDescription;
             _instances.Add(this);
             VendorId = _instances.Count;
-            // Orders = new List<Order> { };
+            Orders = new List<Order> { };
         }
         public static void ClearAll()
         {
@@ -30,6 +30,11 @@ namespace VendorsOrdersPierresBakery.Models
         public static Vendor Find(int searchId)
         {
             return _instances[searchId - 1];
+        }
+
+        public void AddOrder(Order order)
+        {
+            Orders.Add(order);
         }
 
     }
