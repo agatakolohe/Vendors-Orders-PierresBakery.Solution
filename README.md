@@ -19,10 +19,11 @@ Eighth independent project for Epicodus to demonstrate my understanding of creat
 
 ### Describe: Vendor()
 
-| Test                                                        | Expect                                                            |
-| ----------------------------------------------------------- | ----------------------------------------------------------------- |
-| It will instantiate a Vendor object with Vendor constructor | Vendor(string vendorName, string vendorDescription)               |
-| It will assign a Vendor Id number to a Vendor               | Vendor(string vendorName, string vendorDescription, int vendorId) |
+| Test                                                        | Expect                                                |
+| ----------------------------------------------------------- | ----------------------------------------------------- |
+| It will instantiate a Vendor object with Vendor constructor | Vendor(string vendorName, string vendorDescription)   |
+| It will assign a Vendor Id number to a Vendor               | Vendor(int vendorId).toEqual(1);                      |
+| It will create a list of Vendor objects                     | vendorList = new List<Vendor> { vendor01, vendor02 }; |
 
 ### Describe: Order()
 

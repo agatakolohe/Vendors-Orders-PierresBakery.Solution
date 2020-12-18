@@ -53,5 +53,23 @@ namespace VendorsOrdersPierresBakery.Tests
             Assert.AreEqual(1, result);
         }
 
+        [TestMethod]
+        public void GetAll_ReturnsAllVendorObjects_VendorList()
+        {
+            string vendorName01 = "Flour Power";
+            string vendorDescription01 = "flour vendor";
+            string vendorName02 = "Sweet Treat";
+            string vendorDescription02 = "sugar vendor";
+            Vendor newVendor01 = new Vendor(vendorName01, vendorDescription01);
+            Vendor newVendor02 = new Vendor(vendorName02, vendorDescription02);
+            List<Vendor> newVendorList = new List<Vendor> { newVendor01, newVendor02 };
+
+            List<Vendor> result = Vendor.GetAll();
+
+            CollectionAssert.AreEqual(newVendorList, result);
+
+
+        }
+
     }
 }
