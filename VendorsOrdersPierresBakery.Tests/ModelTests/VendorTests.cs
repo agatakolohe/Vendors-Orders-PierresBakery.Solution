@@ -72,7 +72,7 @@ namespace VendorsOrdersPierresBakery.Tests
         }
 
         [TestMethod]
-        public void Find_ReturnsCorrectVendor_Vendor()
+        public void Find_ReturnsCorrectVendorById_Vendor()
         {
             string vendorName01 = "Flour Power";
             string vendorDescription01 = "flour vendor";

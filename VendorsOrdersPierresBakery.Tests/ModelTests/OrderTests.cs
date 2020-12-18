@@ -102,7 +102,7 @@ namespace VendorsOrdersPierresBakery.Tests
         }
 
         [TestMethod]
-        public void Find_ReturnsOrderVendor_Order()
+        public void Find_ReturnsCorrectOrderById_Order()
         {
             string orderTitle01 = "flour";
             string orderDescription01 = "order 10lbs of flour";
@@ -115,7 +115,7 @@ namespace VendorsOrdersPierresBakery.Tests
 
             Order result = Order.Find(2);
 
-            Assert.AreEqual(newOrder01, result);
+            Assert.AreEqual(newOrder02, result);
 
         }
 
