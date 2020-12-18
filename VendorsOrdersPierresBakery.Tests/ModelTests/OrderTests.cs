@@ -63,12 +63,13 @@ namespace VendorsOrdersPierresBakery.Tests
             string orderTitle = "test order title";
             string orderDescription = "test order description";
             int orderPrice = 1;
+            string orderDate = "Monday, January 1, 0001";
             Order newOrder = new Order(orderTitle, orderDescription, orderPrice);
 
             DateTime result = newOrder.OrderDate;
             string resultDateWithFormat = result.ToLongDateString();
 
-            Assert.AreEqual(orderPrice, result);
+            Assert.AreEqual(orderDate, resultDateWithFormat);
         }
 
 
