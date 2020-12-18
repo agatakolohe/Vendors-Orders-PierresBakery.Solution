@@ -14,7 +14,7 @@ namespace VendorsOrdersPierresBakery.Models
         {
             VendorName = vendorName;
             VendorDescription = vendorDescription;
-            // VendorId = _instances.Count;
+            VendorId = _instances.Count;
             // Orders = new List<Order> { };
         }
 
