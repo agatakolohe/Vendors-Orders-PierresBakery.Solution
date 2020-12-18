@@ -27,7 +27,6 @@ namespace VendorsOrdersPierresBakery.Models
             DateTime orderDate = DateTime.UtcNow;
             string orderDateWithFormat = orderDate.ToLongDateString();
             OrderDate = orderDateWithFormat;
-
         }
 
     }
