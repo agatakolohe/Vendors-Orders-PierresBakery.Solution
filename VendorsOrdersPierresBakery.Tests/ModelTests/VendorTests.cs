@@ -24,5 +24,15 @@ namespace VendorsOrdersPierresBakery.Tests
 
             Assert.AreEqual(vendorName, result);
         }
+        [TestMethod]
+        public void GetVendorName_ReturnsVendorDescription_VendorDescription()
+        {
+            string vendorDescription = "test description";
+            Vendor newVendor = new Vendor(vendorDescription);
+
+            string result = newVendor.VendorDescription;
+
+            Assert.AreEqual(vendorDescription, result);
+        }
     }
 }
