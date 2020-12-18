@@ -9,7 +9,7 @@ namespace VendorsOrdersPierresBakery.Models
         public string OrderTitle { get; set; }
         public string OrderDescription { get; set; }
         public int OrderPrice { get; set; }
-        public DateTime OrderDate { get; set; }
+        public string OrderDate { get; set; }
         public int OrderId { get; }
         private static List<Order> _instances = new List<Order> { };
 
