@@ -19,9 +19,9 @@ Eighth independent project for Epicodus to demonstrate my understanding of creat
 
 ### Describe: Vendor()
 
-| Test                                                        | Expect                                                          |
-| ----------------------------------------------------------- | --------------------------------------------------------------- |
-| It will instantiate a Vendor object with Vendor constructor | Vendor(string name, int id, string description, List orderList) |
+| Test                                                        | Expect                                              |
+| ----------------------------------------------------------- | --------------------------------------------------- |
+| It will instantiate a Vendor object with Vendor constructor | Vendor(string vendorName, string vendorDescription) |
 
 ### Describe: Order()
 
