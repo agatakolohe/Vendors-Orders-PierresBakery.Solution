@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System;
 using Microsoft.AspNetCore.Mvc;
-// using ProjectName.Models; <<change
+using VendorsOrdersPierresBakery.Models;
 
-namespace ProjectName.Controllers //change
+namespace VendorsOrdersPierresBakery.Controllers
 {
-    public class ClassNameController : Controller //change
+    public class VendorsController : Controller
     {
         // [HttpGet("/ParentObject")] //Display list of all ParentObjects
         // public ActionResult Index()
