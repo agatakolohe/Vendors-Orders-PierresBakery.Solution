@@ -17,7 +17,7 @@ namespace VendorsOrdersPierresBakery.Tests
         [TestMethod]
         public void OrderConstructor_CreatesInstanceOfOrder_Order()
         {
-            Order newOrder = new Order("test order");
+            Order newOrder = new Order("orderTitle", "orderDescription", 1);
             Assert.AreEqual(typeof(Order), newOrder.GetType());
         }
 
