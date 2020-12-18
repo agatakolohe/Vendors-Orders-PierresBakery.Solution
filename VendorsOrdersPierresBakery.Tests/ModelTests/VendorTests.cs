@@ -93,7 +93,7 @@ namespace VendorsOrdersPierresBakery.Tests
             string orderDescription = "test order description";
             int orderPrice = 1;
             Order newOrder = new Order(orderTitle, orderDescription, orderPrice);
-            List<Order> newOrderList = new List<Order> { };
+            List<Order> newOrderList = new List<Order> { newOrder };
             string vendorName = "test name";
             string vendorDescription = "test description";
             Vendor newVendor = new Vendor(vendorName, vendorDescription);
