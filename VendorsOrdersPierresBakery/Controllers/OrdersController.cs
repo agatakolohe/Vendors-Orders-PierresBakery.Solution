@@ -11,7 +11,7 @@ namespace VendorsOrdersPierresBakery.Controllers
         public ActionResult New(int vendorId)
         {
             Vendor vendor = Vendor.Find(vendorId);
-            return View(category);
+            return View(vendor);
         }
 
         [HttpPost("/orders/delete")]

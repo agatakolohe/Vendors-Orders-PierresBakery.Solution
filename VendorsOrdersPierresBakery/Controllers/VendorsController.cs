@@ -28,7 +28,7 @@ namespace VendorsOrdersPierresBakery.Controllers
         }
 
         [HttpGet("/vendors/{id}")]
-        public ActionResult Show(int vendorId)
+        public ActionResult Show(int id)
         {
             Dictionary<string, object> model = new Dictionary<string, object>();
             Vendor selectedVendor = Vendor.Find(id);
