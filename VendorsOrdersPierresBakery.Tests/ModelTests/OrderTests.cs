@@ -30,7 +30,7 @@ namespace VendorsOrdersPierresBakery.Tests
 
             string result = newOrder.OrderTitle;
 
-            Assert.AreEqual(orderTitle, result);
+            Assert.AreEqual(orderDescription, result);
         }
 
 
