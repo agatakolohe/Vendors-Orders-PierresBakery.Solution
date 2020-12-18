@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using System.Globalization;
 using System;
 using VendorsOrdersPierresBakery.Models;
 
@@ -53,6 +54,19 @@ namespace VendorsOrdersPierresBakery.Tests
             Order newOrder = new Order(orderTitle, orderDescription, orderPrice);
 
             int result = newOrder.OrderPrice;
+
+            Assert.AreEqual(orderPrice, result);
+        }
+        [TestMethod]
+        public void GetOrderDate_ReturnsOrderDate_OrderDate()
+        {
+            string orderTitle = "test order title";
+            string orderDescription = "test order description";
+            int orderPrice = 1;
+            Order newOrder = new Order(orderTitle, orderDescription, orderPrice);
+
+            DateTime result = newOrder.OrderDate;
+            string resultDateWithFormat = result.ToLongDateString();
 
             Assert.AreEqual(orderPrice, result);
         }
