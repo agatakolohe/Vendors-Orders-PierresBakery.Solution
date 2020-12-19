@@ -60,14 +60,19 @@ In order to run the application, please install .NET for your computer to recogn
 2. Open the file. Follow the installation steps.
 3. Confirm the installation is successful by opening your terminal and running the command `dotnet --version`. The response should be something similar to this:`2.2.105`. This means it was successfully installed.
 
+##### Compiling
+
+- Navigate to the VendorsOrdersPieresBakery folder in the command line
+- Use the command `dotnet build` to compile
+
 ##### Installing Packages
 
-- Navigate to the Bakery.Tests folder in the command line
+- Navigate to the VendorsOrdersPierresBakery.Tests folder in the command line
 - Use the command `dotnet restore`
 
 ##### Run Tests
 
-- Navigate to Bakery.Tests folder in the command line
+- Navigate to VendorsOrdersPierresBakery.Tests folder in the command line
 - Use the commands `dotnet build` and `dotnet restore` to make sure code is compiled and packages are installed
 - Use the command `dotnet test` to run tests on all test methods
 
@@ -82,11 +87,11 @@ In order to run the application, please install .NET for your computer to recogn
 
 ## Known Bugs
 
-No known bugs present
+VS Code has been a little buggy recently. If after cloning the repo and you are unable to compile restart VS Code.
 
 ## Support and Contact Details
 
-If any errors or bugs occur with installation delete both bin and obj folders and follow the Installing Packages and Run Console Application instructions again. Get help or report a bug you have found in the .NET platform at [.NET Support](https://dotnet.microsoft.com/platform/support). Or please email me, <agatakolohe@gmail.com>.
+If any errors or bugs occur with installation delete both bin and obj folders and follow the Installing Packages instructions again. Get help or report a bug you have found in the .NET platform at [.NET Support](https://dotnet.microsoft.com/platform/support). Or please email me, <agatakolohe@gmail.com>.
 
 ## Technologies Used
 
@@ -101,7 +106,7 @@ If any errors or bugs occur with installation delete both bin and obj folders an
 - HTTP
 - Razor
 - REPL
-- RESTful Routing
+- RESTful Conventions
 - VS Code
 
 ### License
