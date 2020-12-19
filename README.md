@@ -8,7 +8,7 @@
 
 ## Description
 
-Eighth independent project for Epicodus to demonstrate my understanding of creating C# basic web applications, ASP.NET Core MVC web application, HTTP CRUD methods, MVC application, RESTful routing and test-driven development. This web application will track Pierre's bakery vendors and their orders. It will create a web application that will track Pierre's vendors and their purchases. This application will include a splash page welcoming Pierre and providing a link to view the current vendor's page and a link to add a new vendor. The vendor's page will contain a link to a page presenting a form that Pierre(user) can fill out to create a new vendor. After the form is submitted, the inputted vendor will be saved to the website and the user will be taken back to the homepage. Pierre (user) can click on a vendor's name and go to a new page that will display all of that vendor's orders. Pierre (user) can also click on a link to a page presenting a form to create a new order for a particular vendor.
+Eighth independent project for Epicodus to demonstrate my understanding of creating C# basic web applications, ASP.NET Core MVC web application, HTTP CRUD methods, MVC application, RESTful routing and test-driven development. This web application will track Pierre's bakery vendors and their orders. It is a web application that will track Pierre's(user) vendors and their purchases. This application will include a splash page welcoming Pierre and providing a link to view the current vendor's page and a link to add a new vendor. The vendor's page will list all the current vendors and contain a link to a page presenting a form that Pierre(user) can fill out to create a new vendor. If there are no current vendors, the page will alert Pierre that there are currently no vendors and provide a link to add a new vendor or return to home page. After the form is submitted, the inputted vendor will be saved to the website and the user will be taken back to the homepage. Pierre (user) can click on a vendor's name and go to a new page that will display all of that selected vendor's orders. Pierre (user) can also click on a link to a page presenting a form to create a new order for a particular vendor.
 
 ## Specifications
 
@@ -94,8 +94,8 @@ If any errors or bugs occur with installation delete both bin and obj folders an
 - ASP.NET Core MVC
 - Bootstrap
 - C# 7.3
-- CSS
 - CRUD
+- CSS
 - GitHub
 - HTML
 - HTTP
