@@ -7,14 +7,12 @@ body {
 }
 
 .jumbotron {
-  /* text-align: center; */
   background-color: #476742;
   border: solid #d7a67a;
   opacity: 0.8;
 }
 
 .homeborder {
-  /* text-align: center; */
   border: solid #d7a67a;
   border-radius: 10px;
   box-shadow: 5px 5px #476742;
@@ -26,7 +24,6 @@ body {
 }
 
 .homevendors {
-  /* text-align: center; */
   border: solid #d7a67a;
   border-radius: 10px;
   box-shadow: 5px 5px #476742;
@@ -37,7 +34,6 @@ body {
   padding: 20px;
 }
 .vendorsform {
-  /* text-align: center; */
   border: solid #d7a67a;
   border-radius: 10px;
   box-shadow: 5px 5px #476742;
@@ -57,16 +53,11 @@ body {
   margin-top: 150px;
   padding: 20px;
 }
-/* .vendorsorders h3,
-h4 {
-  /* text-align: center; */
-/* }  */
-.vendorsorders p {
-  margin-top: 10px;
-  /* text-align: center; */
+
+.vendorsorders ol {
+  text-align: left;
 }
 .neworder {
-  /* text-align: center; */
   border: solid #d7a67a;
   box-shadow: 5px 5px #476742;
   border-width: 5px;
@@ -76,7 +67,6 @@ h4 {
   padding: 20px;
 }
 .orderdetails {
-  /* text-align: center; */
   border: solid #d7a67a;
   box-shadow: 5px 5px #476742;
   border-width: 5px;
