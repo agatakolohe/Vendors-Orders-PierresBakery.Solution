@@ -3,20 +3,19 @@
 }
 
 <div class="jumbotron">
-    <h1>@Model["vendor"].VendorName Order Details</h1>
+    <h1>Order Details: @Model["vendor"].VendorName</h1>
 </div>
 
 
-<div class="homebutton">
+<div class="orderdetails">
     <h1>Order Title: @Model["order"].OrderTitle</h1>
     <h3>Order Description: @Model["order"].OrderDescription</h3>
     <h4>Order Date: @Model["order"].OrderDate</h4>
-    <h4>Order Price: @Model["order"].OrderPrice</h4>
+    <h4>Order Price: $ @Model["order"].OrderPrice</h4>
 
-
-    <a href='/vendors/@Model["vendor"].VendorId/orders/new'>Add another order</a>
-    <a href='/vendors'>View All Vendors</a>
+    <p><a href='/vendors/@Model["vendor"].VendorId/orders/new'>Add another order</a></p>
+    <p><a href='/vendors'>View All Vendors</a></p>
     <form action="/orders/delete" method="post">
-        <button type="submit" name="button">Clear Orders</button>
+        <button type="submit" class="btn btn-primary">Clear Orders</button>
     </form>
 </div>

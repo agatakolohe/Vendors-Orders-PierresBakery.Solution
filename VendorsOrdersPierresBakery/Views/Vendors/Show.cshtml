@@ -5,19 +5,22 @@
 }
 
 <div class="jumbotron">
-    <h1>These are all the orders for @Model["vendor"].VendorName</h1>
+    <h1>Orders for: @Model["vendor"].VendorName</h1>
+    <h3>(Click on the order for more information)</h3>
 </div>
 
-@if (@Model["orders"].Count == 0)
-{
-    <h3>You currently do not have any orders for this vendor.</h3>
-}
+<div class="vendorsorders">
+    @if (@Model["orders"].Count == 0)
+    {
+        <h3>You currently do not have any orders for this vendor.</h3>
+    }
 
-<div class="homebutton">
+
     <ol>
         @foreach (Order order in @Model["orders"])
         {
-            <li><a href='/vendors/@Model["vendor"].VendorId/orders/@order.OrderId'>@order.OrderTitle</a></li>
+            <li><strong>Order Title: </strong> <a
+                    href='/vendors/@Model["vendor"].VendorId/orders/@order.OrderId'>@order.OrderTitle</a></li>
         }
     </ol>
 
