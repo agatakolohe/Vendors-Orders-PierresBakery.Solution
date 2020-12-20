@@ -14,13 +14,6 @@ namespace VendorsOrdersPierresBakery.Controllers
             return View(vendor);
         }
 
-        [HttpPost("/orders/delete")]
-        public ActionResult Destroy()
-        {
-            Order.ClearAll();
-            return View();
-        }
-
         [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
         public ActionResult Show(int vendorId, int orderId)
         {
