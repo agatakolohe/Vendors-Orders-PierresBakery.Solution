@@ -91,7 +91,7 @@ In order to run the application, please install .NET for your computer to recogn
 
 ## Known Bugs
 
-VS Code has been a little buggy recently 12-18-2020. If after cloning the repo and you are unable to compile please restart VS Code, that seems to fix the issue at the moment.
+VS Code has been a little buggy recently 12-18-2020. If after cloning the repo and you are unable to compile please restart VS Code, this seems to fix the issue at the moment.
 
 ## Support and Contact Details
 
