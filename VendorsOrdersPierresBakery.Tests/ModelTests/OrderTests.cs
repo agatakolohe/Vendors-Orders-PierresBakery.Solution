@@ -67,12 +67,13 @@ namespace VendorsOrdersPierresBakery.Tests
             string orderTitle = "test order title";
             string orderDescription = "test order description";
             int orderPrice = 1;
-            string orderDate = "Friday, December 18, 2020";
             Order newOrder = new Order(orderTitle, orderDescription, orderPrice);
-
             newOrder.GetOrderDate();
 
-            Assert.AreEqual(orderDate, newOrder.OrderDate);
+            DateTime testOrderDate = DateTime.UtcNow;
+            string testOrderDateWithFormat = testOrderDate.ToLongDateString();
+
+            Assert.AreEqual(testOrderDateWithFormat, newOrder.OrderDate);
         }
 
         [TestMethod]

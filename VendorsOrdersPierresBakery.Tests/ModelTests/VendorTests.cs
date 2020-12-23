@@ -33,7 +33,7 @@ namespace VendorsOrdersPierresBakery.Tests
         }
 
         [TestMethod]
-        public void GetVendorName_ReturnsVendorDescription_VendorDescription()
+        public void GetVendorDescription_ReturnsVendorDescription_VendorDescription()
         {
             string vendorName = "test name";
             string vendorDescription = "test description";
